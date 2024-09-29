@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+
+<head>
+  <title>Faculty Management System</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" /> -->
+  <link href="{% static 'style1.css' %}" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+      <div class="navbar">
+          <h1>Faculty Management System</h1>
+          <div class="nav_options">
+
+            <ul>
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'AdminLogin' %}">Admin Login</a></li>
+              <li><a href="{% url 'FacultyLogin' %}">Faculty Account Login</a></li>
+              <li><a href="{% url 'StudentLogin' %}">Student Account Login</a></li>
+            </ul>
+
+          </div>
+      </div>
+      <div class="herosection">
+        <div class="img">
+          <img src="../static/images/graduation-removebg-preview.png" alt="">
+        </div>
+        
+      </div>
+          <!-- <div class="menu_nav">
+
+            <ul>
+              <li><a href="{% url 'index' %}">
+                  <font size="3" color="white">Home
+                </a></li>
+              <li><a href="{% url 'AdminLogin' %}">
+                  <font size="3" color="black">Admin Login
+                </a></li>
+              <li><a href="{% url 'FacultyLogin' %}">
+                  <font size="3" color="black">Faculty Account Login
+                </a></li>
+              <li><a href="{% url 'StudentLogin' %}">
+                  <font size="3" color="black">Student Account Login
+                </a></li>
+            </ul>
+
+          </div> -->
+          <!-- <div class="hbg"><img src="../static/images/CollegeManagementSystem.webp" width="915" height="286" alt="" /></div> -->
+
+          {{ data }}
+
+
+
+
+</body>
+
+</html>
